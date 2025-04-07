@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,29 +6,35 @@
     list-style: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.container{
+body {
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+
+.container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px; /* Espacio en los lados */
 }
 
 .header {
     background-image: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)),
-        url(imagenes/boda.jpg);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url(imagenes/boda.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
 }
 
-.menu{
+.menu {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,7 +43,8 @@ html{
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     color: white;
     font-size: 25px;
     font-weight: 800;
@@ -48,7 +55,7 @@ html{
     float: left;
 }
 
-.menu .navbar ul li a{
+.menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
     color: white;
@@ -56,7 +63,7 @@ html{
     font-weight: 600;
 }
 
-.menu .navbar ul li a:hover{
+.menu .navbar ul li a:hover {
     color: #ce967b;
 }
 
@@ -64,11 +71,11 @@ html{
     display: none;
 }
 
-.menu-icono{
+.menu-icono {
     width: 25px;
 }
 
-.menu label{
+.menu label {
     cursor: pointer;
     display: none;
 }
@@ -85,42 +92,44 @@ html{
     margin-bottom: 35px;
 }
 
-.header-content p{
+.header-content p {
     font-size: 25px;
     color: white;
-    padding: 0 250px;
+    padding: 0 15px; /* Ajuste del padding */
     margin-bottom: 25px;
 }
 
-.btn-1{
+.btn-1 {
     display: inline-block;
     padding: 11px 35px;
     background-color: #ce967b;
     color: white;
     text-transform: uppercase;
 }
-.btn-1:hover{
+
+.btn-1:hover {
     background-color: #ebad8d;
 }
 
-.lugar1{
+.lugar1 {
     background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(imagenes/iglesiaback.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        padding: 100px 0;
-        text-align: center;
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url(imagenes/iglesiaback.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
 }
 
-.lugar-topside{
+.lugar-topside {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
 }
+
 .lugar1 h2 {
     font-size: 30px;
 }
@@ -131,18 +140,18 @@ html{
 
 .lugar2 {
     background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(imagenes/lugarback.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        padding: 100px 0;
-        text-align: center;
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url(imagenes/lugarback.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
 }
 
-.lugar2 h2{
+.lugar2 h2 {
     font-size: 30px;
 }
 
@@ -151,7 +160,7 @@ html{
     text-align: center;
 }
 
-.blog h2{
+.blog h2 {
     font-size: 40px;
     padding: 50px 0;
 }
@@ -165,47 +174,50 @@ html{
     padding: 15px 55px;
 }
 
-
 .blog-1 img {
-    width: 250px;
+    width: 100%; /* Asegura que las imágenes se adapten al contenedor */
+    max-width: 250px;
+    height: auto;
     border-radius: 15px;
     margin-bottom: 15px;
 }
 
-.blog-1 h2{
+.blog-1 h2 {
     font-size: 40px;
 }
 
-.footer{
+.footer {
     padding: 100px 0;
     background-color: black;
 }
 
-.footer-content{
+.footer-content {
     text-align: center;
 }
 
-.footer h2{
+.footer h2 {
     font-size: 40px;
     color: white;
     padding: 30px;
 }
 
-.footer a{
+.footer a {
     background-color: white;
     color: black;
     font-weight: bold;
 }
 
-@media(max-width:1200px){
-    .menu{
+/* Media query para pantallas más pequeñas */
+@media(max-width: 1200px) {
+    .menu {
         padding: 30px;
     }
 
-    .menu label{
+    .menu label {
         display: initial;
     }
-    .menu .navbar{
+
+    .menu .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -214,41 +226,61 @@ html{
         display: none;
     }
 
-    .menu .navbar ul li{
+    .menu .navbar ul li {
         width: 100%;
         text-align: center;
     }
 
-    #menu:checked ~ .navbar{
+    #menu:checked ~ .navbar {
         display: initial;
     }
 
-    .header-content{
+    .header-content {
         padding: 100px 30px;
     }
 
-    .header-content p{
+    .header-content p {
         padding: 0;
     }
-    .lugar1{
+
+    .lugar1 {
         padding: 30px;
     }
 
-    .lugar-topside{
+    .lugar-topside {
         padding: 0;
     }
 
-    .blog-1{
+    .blog-1 {
         padding: 0;
     }
-    .footer{
+
+    .footer {
         padding: 30px;
     }
 
-    .footer-content{
+    .footer-content {
         flex-direction: column;
         text-align: center;
     }
+}
 
+/* Media query para pantallas más pequeñas (menos de 768px) */
+@media(max-width: 768px) {
+    .header-content h1 {
+        font-size: 50px;
+    }
 
+    .header-content p {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .container {
+        padding: 0 10px; /* Reducir padding en pantallas pequeñas */
+    }
+
+    .menu .navbar ul li a {
+        font-size: 16px;
+    }
 }
