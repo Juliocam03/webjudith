@@ -165,9 +165,6 @@ html{
     padding: 15px 55px;
 }
 
-.blog p{
-    font-size: 20px;
-}
 
 .blog-1 img {
     width: 250px;
@@ -175,8 +172,8 @@ html{
     margin-bottom: 15px;
 }
 
-.blog-1 h3{
-    font-size: 25px;
+.blog-1 h2{
+    font-size: 40px;
 }
 
 .footer{
