@@ -295,6 +295,19 @@ body {
     letter-spacing: 2px;
 }
 
+#img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* Responsive para móviles */
 @media (max-width: 768px) {
     .subtitulo-header {
