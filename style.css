@@ -153,6 +153,7 @@ html{
 
 .blog h2{
     font-size: 40px;
+    padding: 50px 0;
 }
 
 .blog-content {
@@ -199,7 +200,7 @@ html{
     font-weight: bold;
 }
 
-@media(max-width:991px){
+@media(max-width:900px){
     .menu{
         padding: 30px;
     }
