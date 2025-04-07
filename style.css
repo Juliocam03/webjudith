@@ -197,7 +197,7 @@ html{
     font-weight: bold;
 }
 
-@media(max-width:768px){
+@media(max-width:1200px){
     .menu{
         padding: 30px;
     }
@@ -221,10 +221,6 @@ html{
 
     #menu:checked ~ .navbar{
         display: initial;
-    }
-
-    .header {
-        min-height: 0vh;
     }
 
     .header-content{
